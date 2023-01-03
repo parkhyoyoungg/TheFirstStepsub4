@@ -1,0 +1,121 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #000;}
+ul{list-style: none;}
+
+body{font-family: 'Noto Sans KR';
+    font-size:16px;
+    line-height:20px;
+    color:#000;
+    position: relative;
+    }
+
+
+/**header**/
+#header{width: 100%; height: 800px; display: block; background: url(../images/sub4_banner.jpg) no-repeat center top;}
+.header_inner{width: 100%; height: 144px; background-color:  rgba(0, 0, 0, 0.45); position: fixed; z-index: 99;}
+
+.menu{width: 1320px; height: 144px; margin: 0 auto;}
+
+
+
+      .logo{display: block; 
+        width: 10%; 
+        /* height: 70px;  */
+        float: left; padding-top: 70px;}
+      .nav{
+        width:80%;
+ 
+    }
+    .nav>li{float: left; width:20%;
+        margin-top:90px;  text-align: center;
+    }
+    .nav>li>a{display: block; color: #fff;
+         font-size: 19px;
+         padding:17px 0px;}
+    .nav>li>a:hover{color: #ccc;}
+    
+    .rnb{display: block; float: right; 
+        width: 10%; 
+        height: 35px; padding-top: 70px;}
+    
+    
+    /**sub**/
+    .sub_bg{width:100%; 
+        position: absolute; top:144px; left:0; 
+        background-color: rgba(0, 0, 0, 0.45); height: 180px; 
+        padding: 10px 0; display: none;}
+    
+    
+    
+    .sub{
+        width:1320px; 
+        margin: 0 auto; 
+        padding-left:13%;
+    }
+    .sub>li{float:left; width:16.3%; text-align: center;}
+    
+    .subsub{
+        width:100%;
+        text-align: center;}
+    .subsub li a{display:block; 
+         padding: 10px 0; text-align: center; color:#fff;}
+    .sub li a:hover{color:#ccc;}
+    
+
+    .nav li:hover .sub_bg{display: block;}
+
+
+
+/*con1*/
+#board{width:400px;
+    margin:50px;
+    position:relative; /*부모지정*/
+}
+
+#board>li{float:left;
+width:30%;
+}
+
+#board>li>a{display:block;
+        border:1px solid #ccc;
+        padding:10px 20px;
+        text-align:center;
+}
+
+#board>li:nth-child(1) a{border-right:0;}
+
+.gallery li{float:left;
+    padding:10px 4px;
+}
+
+#board>li.on>a{background:#eee; 			
+    font-weight:bold;}
+#board li.on div{position:absolute; /*자식지정*/	
+            top:43.33px; left:0;
+            width:100%;
+            border:1px solid #ccc;
+            background:#fff;
+            padding:20px;
+            box-sizing:border-box;
+            height:800px;
+}
+
+#board>li>div{height:0; overflow:hidden;}
+
+
+
+
+/*푸터*/
+#footer{width: 100%; height: 195px; background-color: #f7e8df; margin-top: 100px;}
+.footer_inner{width: 1320px; margin: 0 auto; padding: 15px 15px 0 15px;}
+.footer_t{float: left; width: 1320px; height: 72px;}
+.footer_t ul li{float: left;}
+.footer_t ul li a{display: block; padding: 20px 30px; font-size: 13px; color: #686868; font-weight: bold;}
+.footer_t ul li a:hover{color: gray;}
+
+.footer_logo{float: right;}
+
+.footer_b{width: 1320px; height: 123px;}
+.f_l{float: left; font-size: 12px; color: #686868; line-height: 24px; padding-left: 30px;}
+.f_r{float: right; font-size: 15px; color: #686868; padding-top: 10px;}
+.f_r2{float:right; font-size: 30px; color: #686868; padding-top: 10px; padding-left: 600px;}
